@@ -1,0 +1,8 @@
+{
+  "usageAlerts": {
+    "day": {
+      "lastNotified": 90,
+      "thresholds": [50, 90, 100]
+    }
+  }
+}
