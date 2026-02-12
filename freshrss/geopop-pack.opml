@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+  <head><title>THEO Feeds</title></head>
+  <body>
+    <outline text="Geopop" title="Geopop" type="rss" xmlUrl="https://www.geopop.it/feed/" htmlUrl="https://www.geopop.it/"/>
+    <outline text="Multiplayer" title="Multiplayer" type="rss" xmlUrl="https://multiplayer.it/feed/rss/homepage/" htmlUrl="https://multiplayer.it/"/>
+    <outline text="Sky TG24" title="Sky TG24" type="rss" xmlUrl="https://tg24.sky.it/rss/tg24.xml" htmlUrl="https://tg24.sky.it/"/>
+  </body>
+</opml>
