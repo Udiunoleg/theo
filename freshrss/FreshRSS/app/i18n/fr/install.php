@@ -1,0 +1,152 @@
+<?php
+
+/******************************************************************************
+ * Each entry of that file can be associated with a comment to indicate its   *
+ * state. When there is no comment, it means the entry is fully translated.   *
+ * The recognized comments are (comment matching is case-insensitive):        *
+ *   + TODO: the entry has never been translated.                             *
+ *   + DIRTY: the entry has been translated but needs to be updated.          *
+ *   + IGNORE: the entry does not need to be translated.                      *
+ * When a comment is not recognized, it is discarded.                         *
+ ******************************************************************************/
+
+return array(
+	'action' => array(
+		'finish' => 'Terminer l’installation',
+		'fix_errors_before' => 'Veuillez corriger les erreurs avant de passer à l’étape suivante.',
+		'keep_install' => 'Garder l’ancienne configuration',
+		'next_step' => 'Passer à l’étape suivante',
+		'reinstall' => 'Réinstaller FreshRSS',
+	),
+	'bdd' => array(
+		'_' => 'Base de données',
+		'conf' => array(
+			'_' => 'Configuration de la base de données',
+			'ko' => 'Vérifiez les informations d’accès à la base de données.',
+			'ok' => 'La configuration de la base de données a été enregistrée.',
+		),
+		'host' => 'Hôte',
+		'password' => 'Mot de passe pour base de données',
+		'prefix' => 'Préfixe des tables',
+		'type' => 'Type de base de données',
+		'username' => 'Nom d’utilisateur pour base de données',
+	),
+	'check' => array(
+		'_' => 'Vérifications',
+		'already_installed' => 'FreshRSS semble avoir déjà été installé !',
+		'cache' => array(
+			'nok' => 'Veuillez vérifier les droits de l’utilisateur <em>%2$s</em> sur le répertoire <em>%1$s</em>. Le serveur HTTP doit être capable d’écrire dedans.',
+			'ok' => 'Les droits sur le répertoire de cache sont bons.',
+		),
+		'ctype' => array(
+			'nok' => 'Impossible de trouver la librairie requise pour la vérification des types de caractères (php-ctype).',
+			'ok' => 'Vous disposez de la librairie requise pour la vérification des types de caractères (ctype).',
+		),
+		'curl' => array(
+			'nok' => 'Vous ne disposez pas de la librairie requise cURL (paquet php-curl).',
+			'ok' => 'Vous disposez de la librairie requise cURL.',
+		),
+		'data' => array(
+			'nok' => 'Veuillez vérifier les droits de l’utilisateur <em>%2$s</em> sur le répertoire <em>%1$s</em>. Le serveur HTTP doit être capable d’écrire dedans.',
+			'ok' => 'Les droits sur le répertoire de data sont bons.',
+		),
+		'dom' => array(
+			'nok' => 'Impossible de trouver la librairie requise pour parcourir le DOM.',
+			'ok' => 'Vous disposez de la librairie requise pour parcourir le DOM.',
+		),
+		'favicons' => array(
+			'nok' => 'Veuillez vérifier les droits de l’utilisateur <em>%2$s</em> sur le répertoire <em>%1$s</em>. Le serveur HTTP doit être capable d’écrire dedans.',
+			'ok' => 'Les droits sur le répertoire des favicons sont bons.',
+		),
+		'fileinfo' => array(
+			'nok' => 'Vous ne disposez pas de la librairie recommendée php-fileinfo.',
+			'ok' => 'Vous disposez de la librairie recommendée php-fileinfo.',
+		),
+		'files' => 'Installation des fichiers',
+		'intl' => array(
+			'nok' => ' Impossible de trouver la librairie recommandée php-intl pour l’internationalisation.',
+			'ok' => 'Vous disposez de la librairie recommandée php-intl pour l’internationalisation.',
+		),
+		'json' => array(
+			'nok' => 'Vous ne disposez pas de l’extension requise JSON (paquet php-json).',
+			'ok' => 'Vous disposez de l’extension requise JSON.',
+		),
+		'mbstring' => array(
+			'nok' => 'Impossible de trouver la librairie recommandée mbstring pour Unicode.',
+			'ok' => 'Vouz disposez de la librairie recommandée mbstring pour Unicode.',
+		),
+		'pcre' => array(
+			'nok' => 'Impossible de trouver la librairie requise pour les expressions régulières (php-pcre).',
+			'ok' => 'Vous disposez de la librairie requise pour les expressions régulières (PCRE).',
+		),
+		'pdo-mysql' => array(
+			'nok' => ' Impossible de trouver le pilote PDO requis pour MySQL/MariaDB.',
+		),
+		'pdo-pgsql' => array(
+			'nok' => 'Impossible de trouver le pilote PDO requis pour PostgreSQL.',
+		),
+		'pdo-sqlite' => array(
+			'nok' => 'Impossible de trouver le pilote PDO pour SQLite.',
+			'ok' => 'Vous disposez du pilote PDO pour SQLite.',
+		),
+		'pdo' => array(
+			'nok' => 'Impossible de trouver PDO avec au moins un des pilotes requis (pdo_sqlite, pdo_pgsql, pdo_mysql).',
+			'ok' => 'Vous disposez de PDO et d’au moins un des pilotes requis (pdo_sqlite, pdo_pgsql, pdo_mysql).',
+		),
+		'php' => array(
+			'_' => 'Installation de PHP',
+			'nok' => 'Votre version de PHP est la %s mais FreshRSS requiert au moins la version %s.',
+			'ok' => 'Votre version de PHP est la %s, qui est compatible avec FreshRSS.',
+		),
+		'reload' => 'Revérifier',
+		'tmp' => array(
+			'nok' => 'Veuillez vérifier les droits de l’utilisateur <em>%2$s</em> sur le répertoire <em>%1$s</em>. Le serveur HTTP doit être capable d’écrire dedans.',
+			'ok' => 'Les droits sur le répertoire temporaire sont bons.',
+		),
+		'tokens' => array(
+			'nok' => 'Veuillez vérifier les droits sur le répertoire <em>./data/tokens</em>. Le serveur HTTP doit être capable d’écrire dedans',
+			'ok' => 'Les droits sur le répertoire des tokens sont bons.',
+		),
+		'unknown_process_username' => 'inconnu',
+		'users' => array(
+			'nok' => 'Veuillez vérifier les droits de l’utilisateur <em>%2$s</em> sur le répertoire <em>%1$s</em>. Le serveur HTTP doit être capable d’écrire dedans.',
+			'ok' => 'Les droits sur le répertoire des utilisateurs sont bons.',
+		),
+		'xml' => array(
+			'nok' => 'Impossible de trouver la librairie requise pour XML.',
+			'ok' => 'Vous disposez de la librairie requise pour XML.',
+		),
+		'zip' => array(
+			'nok' => 'Vous ne disposez pas de l’extension recommandée pour ZIP (paquet php-zip).',
+			'ok' => 'Vous disposez de l’extension recommandée pour ZIP (paquet php-zip).',
+		),
+	),
+	'conf' => array(
+		'_' => 'Configuration générale',
+		'ok' => 'La configuration générale a été enregistrée.',
+	),
+	'congratulations' => 'Félicitations !',
+	'default_user' => array(
+		'_' => 'Nom de l’utilisateur par défaut',
+		'max_char' => '16 caractères alphanumériques maximum',
+	),
+	'fix_errors_before' => 'Veuillez corriger les erreurs avant de passer à l’étape suivante.',
+	'javascript_is_better' => 'FreshRSS est plus agréable à utiliser avec JavaScript activé',
+	'js' => array(
+		'confirm_reinstall' => 'Réinstaller FreshRSS vous fera perdre la configuration précédente. Êtes-vous sûr de vouloir continuer ?',
+	),
+	'language' => array(
+		'_' => 'Langue',
+		'choose' => 'Choisissez la langue pour FreshRSS',
+		'defined' => 'La langue a bien été définie.',
+	),
+	'missing_applied_migrations' => 'Quelque chose s’est mal passé, vous devriez créer le fichier <em>%s</em> à la main.',
+	'ok' => 'L’installation s’est bien passée.',
+	'session' => array(
+		'nok' => 'Le serveur Web semble mal configuré pour les cookies nécessaires aux sessions PHP!',
+	),
+	'step' => 'étape %d',
+	'steps' => 'Étapes',
+	'this_is_the_end' => 'This is the end',	// IGNORE
+	'title' => 'Installation · FreshRSS',	// IGNORE
+);
