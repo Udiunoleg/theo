@@ -3,8 +3,15 @@
 ## Teo (Matteo Berrini)
 - Vive a Pioltello (MI) con la moglie Jessica Corrias.
 - Lavoro: Salesforce Developer (da Ottobre 2017), focus Apex/LWC. Sperimenta anche con React e ha una base NodeJS.
-- Hobby/interessi: CrossFit (fino a 5 volte/settimana quando riesce), videogiochi, anime, film, giochi da tavolo.
+- Hobby/interessi: CrossFit (fino a 5 volte/settimana quando riesce), videogiochi, anime, film, giochi da tavolo, Magic: The Gathering (da inizio 2025).
+- Magic: The Gathering:
+  - Formato preferito: Commander (EDH).
+  - Archivio mazzi completo: `memory/mtg-decks.md`
+  - Mazzo principale: Iron Man, Titan of Innovation (Izzet Artifacts - High Power). Link: https://moxfield.com/decks/uxZtlnRuoESJmr5peJcf_w
+  - Mazzo secondario: Zimone, Mystery Unraveler (Simic Landfall/Manifest - Il primo mazzo creato). Link: https://moxfield.com/decks/SCwVljsJZEmZLH-YbujLFg
+  - Nota: Iron Man è il personaggio Marvel preferito di Teo.
 - Date importanti: insieme a Jessica dal 27 marzo 2013; sposati il 27 marzo 2021.
+- Famiglia: il padre si chiama Marco Berrini, direttore di coro e appassionato di tecnologia. Teo vuole presentargli T.H.E.O. nella settimana del 16 febbraio 2026. Preferenza comunicativa: dare del tu, è alla mano.
 
 ## Preferenze operative
 - Timezone: Europe/Rome
@@ -26,6 +33,14 @@
   - **Albero Secondario (Risparmio Plus):** default `gemini-3-flash` (OAuth Google); fallback `gemini-3-pro` (OAuth Google). Da usare quando la quota Plus è sotto pressione.
 - Reportistica: i job "La Prima" e "Geopop digest" usano esplicitamente **Gemini Pro** (OAuth) per una sintesi di alta qualità.
 - Protocollo Auto-Compact: T.H.E.O monitora il context (via heartbeat); se supera l'80%, salva le decisioni/settaggi recenti in MEMORY.md e lancia `/compact` autonomamente.
+- Gestione Spesa/Prezzi (File Drive `U-Price`):
+  - Teo invia solo foto prodotto/prezzo.
+  - T.H.E.O estrae dati, confronta con storico, aggiorna file.
+  - Regola Detersivo Lavastoviglie: output confronto SEMPRE doppio (vs Gel E vs Pastiglie) per orientare scelta in corsia.
+  - Logica Aggiornamento:
+    - Stesso prodotto+formato → update best price.
+    - Stesso prodotto+formato diverso (bundle/promo) → nuova riga.
+    - Stessa offerta → deduplica (no action se identica).
 - Comando operativo `/quota`: usare formato risposta fisso con emoji e nome modello in **bold+sottolineato**.
 - "La Prima di T.H.E.O": formato definitivo approvato da Teo = PDF impaginato stile giornale (template grafico tipo `la-prima-theo-2026-02-11.html`) con contenuti estesi.
 - Preferenza di consegna "La Prima di T.H.E.O": invio automatico ogni mattina su Telegram appena pronto, senza chiedere conferma.

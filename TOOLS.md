@@ -41,6 +41,11 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
   `ssh -N -L 18789:127.0.0.1:18789 moltbot@100.90.22.124`
   Poi aprire: `http://127.0.0.1:18789`
 
+### GOG (Google Workspace)
+
+- Keyring password: `1Latooscuro!`
+- Account principale: `lordfener92@gmail.com`
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
